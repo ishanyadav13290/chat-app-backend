@@ -32,9 +32,10 @@ mongoose
     console.log(err.message);
   });
 
-  app.listen("/",async(req,res)=>{
-    res.send("Backend Working")
-  })
+  app.get("/", async (req, res) => {
+    res.send("Backend Working");
+  });
+  
 
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
