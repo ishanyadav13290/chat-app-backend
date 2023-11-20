@@ -15,7 +15,7 @@ const server = app.listen(process.env.PORT, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "https://fixit-chat.netlify.app/",
+    origin: "https://fixit-chat.netlify.app",
     credentials: true,
   },
 });
